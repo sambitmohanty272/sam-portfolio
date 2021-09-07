@@ -1,0 +1,459 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@500&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat Alternates', sans-serif;
+    overflow-x: hidden;
+}
+ html {
+     font-size: 10px;
+ }
+
+ body{
+     overflow: hidden;
+     background-color: turquoise;
+     background-image: url(nbook.jpg)
+ }
+ h1{
+     font-size: 43px;
+    font-family:  'Montserrat Alternates', sans-serif;
+ }
+ span{
+    font-family: "poppins" , sans-serif;
+ }
+
+ header{
+     width: 100%;
+     height: 66px;
+     display: flex;
+     align-items: center;
+    justify-content: flex-end;
+     padding: 0 90px;
+     overflow-y: hidden ;
+     position: fixed;
+ }
+ .logo {
+     font-size: 30px;
+     color: white;
+     margin-right: auto;
+ }
+ .navigation{
+     transform: all 0.6 ease-in-out;
+ }
+ .navigation ul{
+    display: flex;
+    
+ }
+ .navigation ul li{
+     font-family: 'Montserrat Alternates', sans-serif;
+     list-style: none;
+     margin-right: 10px;
+     float: right;
+ }
+ .navigation ul li a{
+     text-decoration: none;
+     color:white;
+     padding: 16px;
+     display: inline-block;
+     font-size: 18px;
+     font-weight: 900;
+     transition: all 0.3s;
+     
+ }
+ .navigation ul li a:hover{
+    color: cyan
+    ;
+
+ }
+ .sticky{
+     background-color: #fff;
+     border-bottom: 1px solid #4169e1;
+ }
+ .navigation.active {
+     left: 0;
+ }
+ 
+ .hamburber{
+     display: none;
+ }
+ 
+ 
+  @media only screen and (max-width: 900px) {
+        header{
+            padding: 0 80px;
+            position: unset;
+        }
+        .line{
+            width: 40px;
+            height: 7px;
+            background: #0088a9;
+            margin-bottom: 5px;
+            border-radius: 5px;
+        }
+        .navigation{
+            position: absolute;
+            top: 60px;
+            left: -100%;
+            width: 100%;
+            height:55%;
+            background-color:#4169e1;
+        
+        }
+        .navigation ul{
+            margin-top: 10px;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .navigation ul li{
+            width: 100%;
+            text-align: center;
+        }
+        .navigation ul li a{
+            font-size: 29px;
+            display: block;
+            color: #fff;
+        }
+        .logo h1{
+            margin-top: 10px;
+        }
+        .hamburber{
+            display: block;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+  }
+img{
+    max-width: 100%;
+    vertical-align: left;
+}
+.img-box{
+    width: 20%;
+    float: left;
+    border-radius: 200px;
+    margin-right: 180px;
+    margin-left: 150px;
+    margin-bottom: 150px;
+    margin-top: 120px;
+    background-attachment: fixed;
+
+}
+ .row{
+    width: 90%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 250px;
+    margin-left: 350px;
+    color: #fff;
+
+}
+.btn{
+    margin: 14px 0;
+}
+.btn button{
+    outline: none;
+    padding: 8px,16px;
+    border-radius: 6px;
+    font-size: 20px;
+    font-weight: 400;
+    background: rgb(143, 7, 30);
+    color: white;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: all 0.4s ease;
+}
+.btn button:hover{
+    border-color:rgb(143, 7, 30); 
+    background-color: white;
+    color:rgb(143, 7, 30); ;
+}
+@media only screen and (max-width: 600px) {
+    .row {
+        grid-template-columns: 1fr;
+        margin-left: auto;
+        margin-top: 90px;
+        text-align: center;
+    }
+}
+/*
+.lineHorizontal__container {
+    align-items: center;
+    background-color: black;
+    display: flex;
+    height: 1px;
+    margin-top: 220px;
+  }*/
+
+.about-section{
+    margin-top: 240px;
+    background-color: #849fb6;
+}
+.about-heading{
+    text-align: center;
+    margin-top: 100px;
+}
+.abous{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-content: center;
+    align-items: center;
+    margin-left: 50px;
+    margin-right: 0px;
+    margin-top: 60px;
+    
+}
+.abous h1{
+    color: #eeeeee;
+    margin-top: 120px;
+  
+}
+.abous p{
+    font-size: 15px;
+    
+    
+}
+
+
+
+@media only screen and (max-width: 600px) {
+    .abous  {
+        grid-template-columns: 1fr;
+        grid-gap: 10px;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 60px;
+        float:left;
+    }
+    .img-box{
+        margin-left: 150px;
+        width: 25%;
+        margin-right: 20px;
+    }
+    
+}.skills{
+    
+    background-color: rgb(173, 173, 173);
+}
+.skills-abou{
+    margin-bottom: 240px;
+    text-align: center;
+    margin-right: 50px;
+}
+.skills-abou h1{
+  margin-top: 50px;
+}
+.skill-bars{
+   margin-bottom: 40px;
+    padding: 25px 30px;
+    width: 600px;
+    background: #fff;
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.2);
+    border-radius: 10px;
+}
+.skill-bars .bar{
+    margin: 20px 0;
+  }
+  .skill-bars .bar:first-child{
+    margin-top: 0px;
+  }
+  .skill-bars .bar .info{
+    margin-bottom: 5px;
+  }
+  .skill-bars .bar .info span{
+    font-weight: 500;
+    font-size: 17px;
+    opacity: 0;
+    animation: showText 0.5s 1s linear forwards;
+  }
+  @keyframes showText {
+    100%{
+      opacity: 1;
+    }
+  }
+  .skill-bars .bar .progress-line{
+    height: 10px;
+    width: 100%;
+    background: #f0f0f0;
+    position: relative;
+    transform: scaleX(0);
+    transform-origin: left;
+    border-radius: 10px;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,0.05),
+                0 1px rgba(255,255,255,0.8);
+    animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;
+  }
+  @keyframes animate {
+    100%{
+      transform: scaleX(1);
+    }
+  }
+  .bar .progress-line span{
+    height: 100%;
+    position: absolute;
+    border-radius: 10px;
+    transform: scaleX(0);
+    transform-origin: left;
+    background: #6665ee;
+    animation: animate 1s 1s cubic-bezier(1,0,0.5,1) forwards;
+  }
+  .bar .progress-line.html span{
+    width: 90%;
+  }
+  .bar .progress-line.css span{
+    width: 60%;
+  }
+  .bar .progress-line.jquery span{
+    width: 45%;
+  }
+  .bar .progress-line.python span{
+    width: 50%;
+  }
+  .bar .progress-line.mysql span{
+    width: 75%;
+  }
+  .progress-line span::before{
+    position: absolute;
+    content: "";
+    top: -10px;
+    right: 0;
+    height: 0;
+    width: 0;
+    border: 7px solid transparent;
+    border-bottom-width: 0px;
+    border-right-width: 0px;
+    border-top-color: #000;
+    opacity: 0;
+    animation: showText2 0.5s 1.5s linear forwards;
+  }
+  .progress-line span::after{
+    position: absolute;
+    top: -28px;
+    right: 0;
+    font-weight: 500;
+    background: #000;
+    color: #fff;
+    padding: 1px 8px;
+    font-size: 12px;
+    border-radius: 3px;
+    opacity: 0;
+    animation: showText2 0.5s 1.5s linear forwards;
+  }
+  @keyframes showText2 {
+    100%{
+      opacity: 1;
+    }
+  }
+  .progress-line.html span::after{
+    content: "90%";
+  }
+  .progress-line.css span::after{
+    content: "60%";
+  }
+  .progress-line.jquery span::after{
+    content: "45%";
+  }
+  .progress-line.python span::after{
+    content: "50%";
+  }
+  .progress-line.mysql span::after{
+    content: "75%";
+  }
+
+
+@media only screen and (max-width: 600px) {
+    
+}
+.card{
+
+  margin-bottom: 50px;
+  width: 100%;
+  height: 100%;
+  background: #222;
+  text-align: center;
+  border-radius: 6px;
+  padding: 50px 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.card:hover{
+  background: crimson;
+}
+.card .box{
+  transition: all 0.3s ease;
+  
+}
+.card:hover .box{
+  transform: scale(1.05);
+}
+.card .text{
+  color: #eeeeee;
+  font-size: 25px;
+  font-weight: 500;
+  margin: 10px 0 7px 0;
+}
+.projects-section{
+  
+}
+.pro-heading {
+  text-align: center;
+  margin-bottom: 100px;
+  
+}
+.pro-heading h1{
+  margin-top: 70px;
+}
+@media only screen and (max-width: 600px) {
+  
+}
+.contact-section{
+  margin-top: 100px;
+  background-color: rgb(206, 152, 152);
+  
+}
+.contact-sec{
+  text-align: center;
+  margin-bottom: 130px;
+}
+.contact-sec h1{
+  margin-top: 70px;
+}
+.info{
+  font-size: 40px;
+  display: inline;
+  text-align: center;
+  margin-bottom: 60px;
+
+ 
+}
+
+@media only screen and (max-width: 600px) {
+  .info{
+    font-size: 20px
+  }
+}
+.footer-section{
+  margin-top: 30px;
+}
+.footer{
+  font-size: 20px;
+  text-align: center;
+
+}
+.footer ul li{
+  
+  display: inline;
+  justify-content: space-between; 
+}
+.footer ul li a:hover{
+  color: #000;
+}
+.foot{
+  font-size: 19px;
+  color: white;
+}
+
